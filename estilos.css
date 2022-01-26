@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #CF2B2B;
+    height: 92px;
+    width: 100vw;
+    color: #FFFFFF;   
+    padding-left: 21px;
+    margin-bottom: 31px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+header span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main {
+    margin-top: 124px; /*92 + 32*/
+    margin-bottom: 108px; /**92 + 16*/
+}
+
+main section {
+    margin-left: 19px;
+    margin-bottom: 27px;
+}
+
+main section h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.018em;
+    margin-bottom: 17px;
+}
+
+main section nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+main section nav .opcao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 162px;
+    height: 206px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    border: 5px solid #FFFFFF;
+    margin-right: 16px;
+}
+
+main section nav .opcao img {
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 13px;
+    width: 144px;
+    height: 87px;
+}
+main section nav .opcao h3 {
+    margin-left: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+main section nav .opcao p {
+    margin-left: 9px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+main section nav .opcao span {
+    margin-left: 9px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer button {
+    height: 61px;
+    width: 100vw;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    border: 0;
+    margin: 15px 25px;
+    box-sizing: border-box;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer button span {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
