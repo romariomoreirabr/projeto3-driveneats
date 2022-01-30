@@ -68,6 +68,10 @@ main section nav .opcao {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
+main section nav .opcaoSelecionada {
+    border: 5px solid #32B72F;
+}
+
 main section nav .opcao img {
     margin-left: 9px;
     margin-right: 9px;
@@ -76,6 +80,24 @@ main section nav .opcao img {
     height: 87px;
     border-radius: 4px;
 }
+main section nav .opcao .precoCheck {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main section nav .opcao .checkmark {
+    margin: 0;
+    width: 19px;
+    height: 19px;
+    font-size: 2px;
+}
+main section nav .opcao .checkmark img {
+    z-index: 1;
+    margin: 0;
+    width: 19px;
+    height: 19px;
+}
+
 main section nav .opcao h3 {
     margin-left: 9px;
     font-size: 16px;
@@ -106,7 +128,10 @@ footer {
     bottom: 0;
     left: 0;
 }
-footer button {
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 61px;
     width: 100vw;
     background-color: #CBCBCB;
@@ -116,10 +141,16 @@ footer button {
     box-sizing: border-box;
     padding-left: 20%;
     padding-right: 20%;
-}
-
-footer button span {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
+    text-align: center;
+}
+
+footer .fecharPedido {
+    background-color:#32B72F;
+}
+
+.escondido {
+    display: none;
 }
