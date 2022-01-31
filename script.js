@@ -105,8 +105,8 @@ function confirmarPedido () {
 
 function fecharPedido () {
     total = valorPrato + valorBebida + valorSobremesa;
-    let totalString = total.toFixed(2).toString();
-    texto = "Olá, gostaria de fazer o pedido:\n- Prato: " + prato + " \n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + totalString.replace(".", ",") + "\n\nNome: " + nome + "\nEndereço: " + endereco;
+    //let totalString = total.toFixed(2).toString();
+    texto = "Olá, gostaria de fazer o pedido:\n- Prato: " + prato + " \n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + total.toFixed(2) + "\n\nNome: " + nome + "\nEndereço: " + endereco;
     mensagem = encodeURIComponent(texto);
     linkWhatsapp = "https://wa.me/5538999455500?text="+mensagem;
     window.open(linkWhatsapp);
